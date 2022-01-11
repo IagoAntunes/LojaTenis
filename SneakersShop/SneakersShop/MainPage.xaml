@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SneakersShop.MainPage">
+    <Grid Padding="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="160"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Margin="0" VerticalOptions="End">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Candy&#10;" FontSize="48"/>
+                    <Span Text="Sneakers" FontAttributes="Bold" FontSize="48"/>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
+        <Grid Grid.Row="1" HorizontalOptions="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="170"/>
+                <ColumnDefinition Width="170"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="250"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="250"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+
+            <Frame Grid.Row="0" Grid.Column="0" Padding="0" CornerRadius="20" HeightRequest="150">
+                <ImageButton Source="Tenisp1.png" Aspect="AspectFill" Margin="0" Clicked="GoDetalhesP1"/>
+            </Frame>
+            <Button Grid.Row="0" Grid.Column="0" Margin="0,7,5,0" ImageSource="Coracaop1"  VerticalOptions="Start" HorizontalOptions="End" HeightRequest="40" WidthRequest="40" CornerRadius="20" BackgroundColor="White"/>
+            <StackLayout Grid.Row="1" HorizontalOptions="Center">
+                <Label Text="NMD_R1 candy" Grid.Row="1" FontSize="18" x:Name="lblNome1"/>
+                <Label Text="$162" Grid.Row="1" FontSize="18" HorizontalTextAlignment="Start" FontAttributes="Bold" x:Name="lblpreco1"/>
+            </StackLayout>
+            <Frame Grid.Row="0" Grid.Column="1" Padding="0" CornerRadius="20" HeightRequest="150">
+                <ImageButton Source="Tenisp2.png" Aspect="AspectFill"/>
+            </Frame>
+            <Button Grid.Row="0" Grid.Column="1" Margin="0,7,5,0" ImageSource="Coracaop1"  VerticalOptions="Start" HorizontalOptions="End" HeightRequest="40" WidthRequest="40" CornerRadius="20" BackgroundColor="White"/>
+            <StackLayout Grid.Row="1" Grid.Column="1" HorizontalOptions="Center">
+                <Label Text="NMD_R1 candy" Grid.Row="1" FontSize="18" x:Name="lblNome2"/>
+                <Label Text="$162" Grid.Row="1" FontSize="18" HorizontalTextAlignment="Start" FontAttributes="Bold" x:Name="lblpreco2"/>
+            </StackLayout>
+
+            <Frame Grid.Row="2" Grid.Column="0" Padding="0" CornerRadius="20">
+                <ImageButton Source="Tenisp3.png" Aspect="AspectFill"/>
+            </Frame>
+            <Button Grid.Row="2" Grid.Column="0" Margin="0,7,5,0" ImageSource="Coracaop1"  VerticalOptions="Start" HorizontalOptions="End" HeightRequest="40" WidthRequest="40" CornerRadius="20" BackgroundColor="White"/>
+
+            <StackLayout Grid.Row="3" Grid.Column="0" HorizontalOptions="Center">
+                <Label Text="NMD_R1 candy" Grid.Row="1" FontSize="18" x:Name="lblNome3"/>
+                <Label Text="$162" Grid.Row="1" FontSize="18" HorizontalTextAlignment="Start" FontAttributes="Bold" x:Name="lblpreco3"/>
+            </StackLayout>
+            <Frame Grid.Row="2" Grid.Column="1" Padding="0" CornerRadius="20">
+                <ImageButton Source="Tenisp4.png" Aspect="AspectFill"/>
+            </Frame>
+            <Button Grid.Row="2" Grid.Column="1" Margin="0,7,5,0" ImageSource="Coracaop1"  VerticalOptions="Start" HorizontalOptions="End" HeightRequest="40" WidthRequest="40" CornerRadius="20" BackgroundColor="White"/>
+            <StackLayout Grid.Row="3" Grid.Column="1" HorizontalOptions="Center">
+                <Label Text="NMD_R1 candy" Grid.Row="1" FontSize="18" x:Name="lblNome4"/>
+                <Label Text="$162" Grid.Row="1" FontSize="18" HorizontalTextAlignment="Start" FontAttributes="Bold" x:Name="lblpreco4"/>
+            </StackLayout>
+        </Grid>
+
+    </Grid>
+</ContentPage>

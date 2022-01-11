@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SneakersShop.Views.Detalhes">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto,Auto,Auto,Auto,*">
+                <Ellipse Margin="0,45,20,0" Grid.Column="1" Grid.Row="0"
+                     Stroke="Silver"
+                     StrokeThickness="1"
+                     WidthRequest="50"
+                     HeightRequest="50"
+                     HorizontalOptions="End" />
+                <Label Margin="0,65,50,0" Grid.Column="1" Grid.Row="0" HorizontalOptions="End" Text="360°" FontSize="23" FontAttributes="Bold"/>
+                <Ellipse Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1"
+                     HorizontalOptions="CenterAndExpand"
+                     VerticalOptions="CenterAndExpand"
+                     Fill="#97b8ad"
+                     WidthRequest="300"
+                     HeightRequest="300"  />
+                <Image Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Source="TenisCompletoP1.png" HorizontalOptions="Center" VerticalOptions="Center" Aspect="AspectFill" HeightRequest="350"  />
+                <StackLayout Grid.Column="0" Grid.Row="2" Padding="35,-20,0,0" VerticalOptions="Start" Orientation="Horizontal">
+                    <Label Text="US 7" FontAttributes="Bold"/>
+                    <Image Source="Arrow" />
+                </StackLayout>
+                <Label x:Name="lblNome" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="3" Padding="35,0,0,0" Text="NMD_R1 mint&#10;pink candy" FontAttributes="Bold" FontSize="40"/>
+                
+                <Label Grid.Column="1" Grid.Row="4" Padding="0,0,35,0" HorizontalOptions="End">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="$ " FontSize="25"/>
+                            <Span Text="179" FontAttributes="Bold" FontSize="40" x:Name="lblPreco"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Grid Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="5" Padding="20,30,0,20" Background="#97b8ad" VerticalOptions="FillAndExpand" RowDefinitions="Auto,Auto,*" ColumnDefinitions="Auto,*">
+                    <Label Grid.Row="0" Grid.wdColumn="0" Grid.ColumnSpan="2" Text="About the product" FontAttributes="Bold"/>
+                    <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Text="You never know where the day will take you, but &#10;at least you know you're going to look fresh &#10;while you figure it out." LineHeight="1.6"/>
+                    <Button Grid.Row="2" Grid.Column="0"  VerticalOptions="Center" BorderWidth="2" HeightRequest="60" CornerRadius="10" WidthRequest="60" BackgroundColor="Transparent" BorderColor="#e4e2e1" ImageSource="Coracaop4"/>
+                    <Button Grid.Row="2" Grid.Column="1" Margin="10,0,20,0" CornerRadius="20" VerticalOptions="Center" HeightRequest="60" Background="Black" TextColor="White" FontAttributes="Bold" Text="ADD TO CART"/>
+                </Grid>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
